@@ -1,0 +1,9 @@
+baseURL = 'https://example.org/' 
+languageCode = 'en-us'
+title = 'Mitchell Allison | Mechanical Engineer'
+theme = "blowfish"
+
+# Optional but recommended
+enableRobotsTXT = true
+paginate = 12
+summaryLength = 30
