@@ -13,7 +13,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/adventure/co_14ers/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/contact/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/adventure/hunting/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/adventure/other/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
