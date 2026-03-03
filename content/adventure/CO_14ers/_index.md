@@ -1,6 +1,7 @@
 ---
-title: "CO 14ers"
-description: "My quest to hike/climb all 58"
+title: "Colorado 14ers"
+description: "Long-form mountain training, route strategy, and altitude logistics."
+card_image: "/adventure/other/adventure1/Longs.jpg"
 ---
 
-Vert O'Clock
+Peak days, planning systems, and route notes.

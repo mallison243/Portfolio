@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ERP on Blowfish</title>
+    <link>http://localhost:1313/tags/erp/</link>
+    <description>Recent content in ERP on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Mitchell Allison</copyright>
+    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/erp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Inventory Sync Engine</title>
+      <link>http://localhost:1313/projects/inventory-sync/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/inventory-sync/</guid>
+      <description>Synced ERP and warehouse counts on a timed cadence with mismatch alerts for high-priority SKUs.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

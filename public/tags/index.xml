@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Mitchell Allison</copyright>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Backpacking</title>
       <link>http://localhost:1313/tags/backpacking/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/backpacking/</guid>
       <description></description>
@@ -22,7 +22,7 @@
     <item>
       <title>Colorado</title>
       <link>http://localhost:1313/tags/colorado/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/colorado/</guid>
       <description></description>
@@ -32,9 +32,259 @@
     <item>
       <title>San Juans</title>
       <link>http://localhost:1313/tags/san-juans/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/san-juans/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/tags/automation/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Operations</title>
+      <link>http://localhost:1313/tags/operations/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/operations/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Scheduling</title>
+      <link>http://localhost:1313/tags/scheduling/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/scheduling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Continuous Improvement</title>
+      <link>http://localhost:1313/tags/continuous-improvement/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/continuous-improvement/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Dashboard</title>
+      <link>http://localhost:1313/tags/dashboard/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/dashboard/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>http://localhost:1313/tags/data/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/data/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Quality</title>
+      <link>http://localhost:1313/tags/quality/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/quality/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ERP</title>
+      <link>http://localhost:1313/tags/erp/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/erp/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Warehouse</title>
+      <link>http://localhost:1313/tags/warehouse/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/warehouse/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Calibration</title>
+      <link>http://localhost:1313/tags/calibration/</link>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/calibration/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Compliance</title>
+      <link>http://localhost:1313/tags/compliance/</link>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/compliance/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sensors</title>
+      <link>http://localhost:1313/tags/sensors/</link>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/sensors/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Analysis</title>
+      <link>http://localhost:1313/tags/analysis/</link>
+      <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/analysis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cost Modeling</title>
+      <link>http://localhost:1313/tags/cost-modeling/</link>
+      <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/cost-modeling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Procurement</title>
+      <link>http://localhost:1313/tags/procurement/</link>
+      <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/procurement/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Data Collection</title>
+      <link>http://localhost:1313/tags/data-collection/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/data-collection/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Field Ops</title>
+      <link>http://localhost:1313/tags/field-ops/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/field-ops/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mobile</title>
+      <link>http://localhost:1313/tags/mobile/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/mobile/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Alerting</title>
+      <link>http://localhost:1313/tags/alerting/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/alerting/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>KPIs</title>
+      <link>http://localhost:1313/tags/kpis/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/kpis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Reliability</title>
+      <link>http://localhost:1313/tags/reliability/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/reliability/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>BOM</title>
+      <link>http://localhost:1313/tags/bom/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/bom/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CAD</title>
+      <link>http://localhost:1313/tags/cad/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/cad/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Manufacturing</title>
+      <link>http://localhost:1313/tags/manufacturing/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/manufacturing/</guid>
       <description></description>
       
     </item>

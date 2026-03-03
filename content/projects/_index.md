@@ -1,11 +1,8 @@
 ---
 title: "Projects"
-description: "Slap some project in here"
+description: "Engineering and automation work samples."
 ---
 
-## Heading
-Here are my sick projects. Take a peek.
+A structured set of sample projects to evaluate card layout, hover interactions, and readability.
 
-## Heading 2
--**Something**-
--**More stuff**-
+Featured projects are shown first, followed by additional samples.

@@ -21,6 +21,8 @@
 
   
   
+    <meta name="description" content="Send a message without publishing a direct email address.">
+  
   
   
   
@@ -37,12 +39,14 @@
   <meta property="og:url" content="http://localhost:1313/contact/">
   <meta property="og:site_name" content="Blowfish">
   <meta property="og:title" content="Contact">
+  <meta property="og:description" content="Send a message without publishing a direct email address.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
 
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Contact">
+  <meta name="twitter:description" content="Send a message without publishing a direct email address.">
 
   
   
@@ -79,6 +83,8 @@
   
   
   
+  
+    
   
   
     
@@ -87,8 +93,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.c54019dc7ccdfc63a28ff9e8941fdaa42b12ffb773bbe18f14e4ce062614784c356bb2fbdfe24d6682586d2fd2b84116ce839dac5c31a637b79210647364a1f4.css"
-    integrity="sha512-xUAZ3HzN/GOij/nolB/apCsS/7dzu&#43;GPFOTOBiYUeEw1a7L73&#43;JNZoJYbS/SuEEWzoOdrFwxpje3khBkc2Sh9A==">
+    href="/css/main.bundle.min.9d8c8e3c38e1052ae8034c29e45a75c4c1e861f52b78d6215600b2c5f4510be893265806c9e7a2e9d12bbbf08a55d79a0fcf43fca2e23752d91453ffe576e7e3.css"
+    integrity="sha512-nYyOPDjhBSroA0wp5Fp1xMHoYfUreNYhVgCyxfRRC&#43;iTJlgGyeei6dEru/CKVdeaD89D/KLiN1LZFFP/5Xbn4w==">
 
   
   
@@ -191,10 +197,10 @@
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "",
+    "articleSection": "Home",
     "name": "Contact",
     "headline": "Contact",
-    
+    "description": "Send a message without publishing a direct email address.",
     "inLanguage": "en",
     "url" : "http://localhost:1313/contact/",
     "author" : {
@@ -210,7 +216,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "8"
+    "wordCount": "20"
   }]
   </script>
 
@@ -277,7 +283,7 @@
       
       class="flex items-center bf-icon-color-hover"
       aria-label="Home"
-      title="">
+      title="Home">
       
       
         <span class="text-base font-medium break-normal">
@@ -442,7 +448,7 @@
         
         class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
         
-        <span title="" class="text-2xl font-bold tracking-tight">
+        <span title="Home" class="text-2xl font-bold tracking-tight">
           Home
         </span>
         
@@ -566,17 +572,11 @@
   
 
   
-    
-  
 
   
 
   
-    
-  
 
-  
-    
   
 
   
@@ -592,8 +592,6 @@
 
   <div class="flex flex-row flex-wrap items-center">
     
-    
-      <time datetime="0001-01-01T00:00:00&#43;00:00">1 January 0001</time><span class="px-2 text-primary-500">&middot;</span><span>8 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
     
 
     
@@ -623,33 +621,9 @@
   
 
   
-    
-    
-<div class="flex author">
-  
-  <div class="place-self-center">
-    
-      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
-        Author
-      </div>
-      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
-        Mitchell Allison
-      </div>
-    
-    
-      <div class="text-sm text-neutral-700 dark:text-neutral-400">I build practical engineering solutions that bridge hardware and software—focused on reliability, clarity, and real-world constraints.</div>
-    
-    <div class="text-2xl sm:text-lg">
-</div>
-  </div>
-</div>
 
   
 
-  
-
-  
-    <div class="mb-5"></div>
   
 
       
@@ -668,12 +642,70 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          <ul>
-<li>Email: <a href="mailto:your.email@example.com" >your.email@example.com</a></li>
-<li>LinkedIn: (link)</li>
-<li>GitHub: (link)</li>
-<li>Resume: /files/Mitchell_Allison_Resume.pdf</li>
-</ul>
+          <p>Use the form below to send a message without exposing a direct email address.</p>
+<div class="contact-form-wrap">
+  <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/mykdrzdg">
+    <input type="hidden" name="_subject" value="New portfolio contact request">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+    <label for="name">Name
+      <input id="name" name="name" type="text" autocomplete="name" required>
+    </label>
+    <label for="email">Email
+      <input id="email" name="email" type="email" autocomplete="email" required>
+    </label>
+    <label for="subject">Subject
+      <input id="subject" name="subject" type="text" required>
+    </label>
+    <label for="message">Message
+      <textarea id="message" name="message" rows="7" required></textarea>
+    </label>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+</div>
+<script>
+  (() => {
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("contact-status");
+
+    if (!form || !status) return;
+
+    const showStatus = (message, kind) => {
+      status.textContent = message;
+      status.classList.remove("contact-status--ok", "contact-status--error");
+      if (kind === "ok") status.classList.add("contact-status--ok");
+      if (kind === "error") status.classList.add("contact-status--error");
+    };
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      showStatus("Sending...", "");
+
+      const formData = new FormData(form);
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: { Accept: "application/json" },
+        });
+
+        if (response.ok) {
+          form.reset();
+          showStatus("Message sent successfully. I will get back to you soon.", "ok");
+          return;
+        }
+
+        const payload = await response.json().catch(() => null);
+        const errorMessage =
+          payload?.errors?.map((error) => error.message).join(" ") ||
+          "Submission failed. Please try again in a minute.";
+        showStatus(errorMessage, "error");
+      } catch (error) {
+        showStatus("Network error. Please check your connection and try again.", "error");
+      }
+    });
+  })();
+</script>
 
           
           

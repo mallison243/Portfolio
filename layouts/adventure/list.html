@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <header>
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+  </header>
+
+  <section class="mt-4 mb-10 prose max-w-full dark:prose-invert">
+    <div class="min-w-0 min-h-0 max-w-prose w-full">
+      {{ .Content }}
+    </div>
+  </section>
+
+  {{ $adventureSections := .Sections.ByTitle }}
+  {{ if gt (len $adventureSections) 0 }}
+    <section>
+      <div class="portfolio-grid portfolio-grid--adventure">
+        {{ range $adventureSections }}
+          {{ $cardImage := .Params.card_image | default "" }}
+          {{ $resources := .Resources.ByType "image" }}
+          {{ if not $cardImage }}
+            {{ range slice "*preview*" "*feature*" "*cover*" "*thumbnail*" "*hero*" "*" }}
+              {{ if not $cardImage }}
+                {{ with $resources.GetMatch . }}
+                  {{ $cardImage = .RelPermalink }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          <a href="{{ .RelPermalink }}" class="portfolio-card portfolio-card--adventure group">
+            <div class="portfolio-card__media{{ if not $cardImage }} portfolio-card__media--fallback{{ end }}"{{ with $cardImage }} style="background-image: url('{{ . }}');"{{ end }}></div>
+            <div class="portfolio-card__title">
+              <h2>{{ .Title }}</h2>
+            </div>
+            <div class="portfolio-card__overlay">
+              <p>{{ .Params.description | default "Explore this adventure collection." }}</p>
+              <span class="portfolio-card__link">Explore</span>
+            </div>
+          </a>
+        {{ end }}
+      </div>
+    </section>
+  {{ else }}
+    <section class="mt-10 prose dark:prose-invert">
+      <p class="py-8 border-t">
+        <em>{{ i18n "list.no_articles" | emojify }}</em>
+      </p>
+    </section>
+  {{ end }}
+{{ end }}

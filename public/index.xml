@@ -1,13 +1,103 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blowfish</title>
+    <title>Home on Blowfish</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Blowfish</description>
+    <description>Recent content in Home on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Mitchell Allison</copyright>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Field Service Scheduler</title>
+      <link>http://localhost:1313/projects/project1/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/project1/</guid>
+      <description>Automated daily technician scheduling with constraints for route time, urgency, and skill coverage.</description>
+      
+    </item>
+    
+    <item>
+      <title>Manufacturing QA Dashboard</title>
+      <link>http://localhost:1313/projects/project2/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/project2/</guid>
+      <description>Merged inspection, scrap, and downtime data into one dashboard used in weekly quality reviews.</description>
+      
+    </item>
+    
+    <item>
+      <title>Inventory Sync Engine</title>
+      <link>http://localhost:1313/projects/inventory-sync/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/inventory-sync/</guid>
+      <description>Synced ERP and warehouse counts on a timed cadence with mismatch alerts for high-priority SKUs.</description>
+      
+    </item>
+    
+    <item>
+      <title>A 2.5-Day Loop in the San Juans</title>
+      <link>http://localhost:1313/adventure/other/adventure1/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/adventure/other/adventure1/</guid>
+      <description>A short shoulder-season trip that reminded me how much good planning matters.</description>
+      
+    </item>
+    
+    <item>
+      <title>Sensor Calibration Pipeline</title>
+      <link>http://localhost:1313/projects/sensor-calibration-pipeline/</link>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sensor-calibration-pipeline/</guid>
+      <description>Standardized calibration data ingestion and report generation for faster compliance checks.</description>
+      
+    </item>
+    
+    <item>
+      <title>Procurement Quote Analyzer</title>
+      <link>http://localhost:1313/projects/procurement-quote-analyzer/</link>
+      <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/procurement-quote-analyzer/</guid>
+      <description>Compared supplier quotes by lead time, risk flags, and landed cost using a repeatable scoring model.</description>
+      
+    </item>
+    
+    <item>
+      <title>Site Inspection Mobile Capture</title>
+      <link>http://localhost:1313/projects/site-inspection-mobile/</link>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/site-inspection-mobile/</guid>
+      <description>Captured inspection notes and photos in the field with offline sync and standardized defect codes.</description>
+      
+    </item>
+    
+    <item>
+      <title>Maintenance KPI Alerts</title>
+      <link>http://localhost:1313/projects/maintenance-kpi-alerts/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/maintenance-kpi-alerts/</guid>
+      <description>Automated threshold alerts for downtime, MTTR, and repeat failures to trigger earlier interventions.</description>
+      
+    </item>
+    
+    <item>
+      <title>CAD to BOM Validator</title>
+      <link>http://localhost:1313/projects/cad-bom-validator/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/cad-bom-validator/</guid>
+      <description>Validated CAD assemblies against ERP bill-of-material exports to catch part and quantity mismatches.</description>
+      
+    </item>
     
     <item>
       <title>Contact</title>

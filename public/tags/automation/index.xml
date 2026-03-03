@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Blowfish</title>
+    <link>http://localhost:1313/tags/automation/</link>
+    <description>Recent content in Automation on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Mitchell Allison</copyright>
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Field Service Scheduler</title>
+      <link>http://localhost:1313/projects/project1/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/project1/</guid>
+      <description>Automated daily technician scheduling with constraints for route time, urgency, and skill coverage.</description>
+      
+    </item>
+    
+    <item>
+      <title>Inventory Sync Engine</title>
+      <link>http://localhost:1313/projects/inventory-sync/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/inventory-sync/</guid>
+      <description>Synced ERP and warehouse counts on a timed cadence with mismatch alerts for high-priority SKUs.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

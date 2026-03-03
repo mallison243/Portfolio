@@ -1,9 +1,6 @@
 ---
 title: "Adventure"
-description: "Outside of work: mountains, builds, and lessons learned."
+description: "Outside-of-work projects and trips that sharpen planning and execution."
 ---
 
-A few things outside of work that keep me sharp
-- [Colorado 14ers](/adventure/CO_14ers/)
-- [Hunting](/adventure/hunting/)
-- [Other](/adventure/other/)
+Adventure collections use the same card treatment as Projects, with larger image-forward cards.

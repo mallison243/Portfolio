@@ -1,6 +1,7 @@
 ---
 title: "Hunting"
-description: "Putting meat on the table"
+description: "Backcountry prep, field systems, and practical lessons from each season."
+card_image: "/projects/Project1/Preview.jpg"
 ---
 
-Beautiful country, great eating
+Field notes from planning, gear, and execution.

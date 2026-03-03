@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sensors on Blowfish</title>
+    <link>http://localhost:1313/tags/sensors/</link>
+    <description>Recent content in Sensors on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Mitchell Allison</copyright>
+    <lastBuildDate>Thu, 14 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sensors/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sensor Calibration Pipeline</title>
+      <link>http://localhost:1313/projects/sensor-calibration-pipeline/</link>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sensor-calibration-pipeline/</guid>
+      <description>Standardized calibration data ingestion and report generation for faster compliance checks.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

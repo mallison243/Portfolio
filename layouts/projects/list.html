@@ -1,0 +1,88 @@
+{{ define "main" }}
+  <header>
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+  </header>
+
+  <section class="mt-4 mb-10 prose max-w-full dark:prose-invert">
+    <div class="min-w-0 min-h-0 max-w-prose w-full">
+      {{ .Content }}
+    </div>
+  </section>
+
+  {{ $allProjects := sort (where site.RegularPages "Section" "projects") "Date" "desc" }}
+  {{ $featuredProjects := sort (where $allProjects "Params.featured" true) "Weight" "asc" }}
+  {{ $otherProjects := sort (where $allProjects "Params.featured" "ne" true) "Date" "desc" }}
+
+  {{ if gt (len $allProjects) 0 }}
+    {{ if gt (len $featuredProjects) 0 }}
+      <section class="mb-12">
+        <h2 class="mb-4 text-2xl font-bold text-neutral-800 dark:text-neutral-100">Featured Projects</h2>
+        <div class="portfolio-grid">
+          {{ range $featuredProjects }}
+            {{ $cardImage := .Params.card_image | default "" }}
+            {{ $resources := .Resources.ByType "image" }}
+            {{ if not $cardImage }}
+              {{ range slice "*preview*" "*feature*" "*cover*" "*thumbnail*" "*hero*" "*" }}
+                {{ if not $cardImage }}
+                  {{ with $resources.GetMatch . }}
+                    {{ $cardImage = .RelPermalink }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+
+            <a href="{{ .RelPermalink }}" class="portfolio-card group">
+              <div class="portfolio-card__media{{ if not $cardImage }} portfolio-card__media--fallback{{ end }}"{{ with $cardImage }} style="background-image: url('{{ . }}');"{{ end }}></div>
+              <div class="portfolio-card__title">
+                <h3>{{ .Title }}</h3>
+                <span class="portfolio-badge">Featured</span>
+              </div>
+              <div class="portfolio-card__overlay">
+                <p>{{ .Params.summary | default (.Summary | plainify) }}</p>
+                <span class="portfolio-card__link">View Project</span>
+              </div>
+            </a>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ if gt (len $otherProjects) 0 }}
+      <section>
+        <h2 class="mb-4 text-2xl font-bold text-neutral-800 dark:text-neutral-100">More Projects</h2>
+        <div class="portfolio-grid">
+          {{ range $otherProjects }}
+            {{ $cardImage := .Params.card_image | default "" }}
+            {{ $resources := .Resources.ByType "image" }}
+            {{ if not $cardImage }}
+              {{ range slice "*preview*" "*feature*" "*cover*" "*thumbnail*" "*hero*" "*" }}
+                {{ if not $cardImage }}
+                  {{ with $resources.GetMatch . }}
+                    {{ $cardImage = .RelPermalink }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+
+            <a href="{{ .RelPermalink }}" class="portfolio-card group">
+              <div class="portfolio-card__media{{ if not $cardImage }} portfolio-card__media--fallback{{ end }}"{{ with $cardImage }} style="background-image: url('{{ . }}');"{{ end }}></div>
+              <div class="portfolio-card__title">
+                <h3>{{ .Title }}</h3>
+              </div>
+              <div class="portfolio-card__overlay">
+                <p>{{ .Params.summary | default (.Summary | plainify) }}</p>
+                <span class="portfolio-card__link">View Project</span>
+              </div>
+            </a>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  {{ else }}
+    <section class="mt-10 prose dark:prose-invert">
+      <p class="py-8 border-t">
+        <em>{{ i18n "list.no_articles" | emojify }}</em>
+      </p>
+    </section>
+  {{ end }}
+{{ end }}
